@@ -1,0 +1,787 @@
+/* Googlefont Poppins CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Viga&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Viga", sans-serif;
+}
+body {
+  min-height: 100%;
+  background-color: #fbf6f3;
+}
+
+@font-face {
+  font-family: "noto";
+  src: url("NotoSansTagalog-Regular.ttf");
+}
+
+td:nth-child(2) {
+  font-family: "noto";
+}
+
+.paragraph-w-baybayin span {
+  font-family: "noto";
+}
+
+.form-popup {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+/*Navbar*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: #9b4922;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav .navbar {
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  /* background: red; */
+  padding: 0 50px;
+}
+.navbar .logo a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .navbar .nav-links {
+  line-height: 70px;
+  height: 100%;
+}
+nav .navbar .links {
+  display: flex;
+}
+nav .navbar .links li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a {
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow {
+  transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow {
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: #fff569;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu {
+  display: block;
+}
+.navbar .links li .sub-menu li {
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar .links li .sub-menu a {
+  color: #9b4922;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow {
+  line-height: 40px;
+}
+.navbar .links li .sub-menu .more-sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu {
+  display: block;
+}
+
+.navbar .nav-links .sidebar-logo {
+  display: none;
+}
+.navbar .bx-menu {
+  display: none;
+}
+/*End of Navbar*/
+
+/*Translator*/
+.modern {
+  position: absolute;
+  height: 12%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.translation {
+  margin: 0;
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modernWord {
+  border: 5px solid #9b4922;
+  width: 600px;
+  height: 86px;
+  resize: none;
+  display: block;
+  font-size: 25px;
+}
+.baybayinquestion {
+  font-family: "noto";
+  font-size: larger;
+}
+
+.baybayin-display {
+  border: 5px solid #9b4922;
+  width: 600px;
+  height: 86px;
+  font-family: "noto";
+  resize: none;
+  display: block;
+  font-size: 25px;
+}
+
+#copyBtn {
+  margin-top: 2%;
+  align-items: auto;
+  align-self: center;
+}
+/*End of Translator*/
+
+/*Graphics Home Page*/
+.graphics-container {
+  margin-top: 10%;
+  position: absolute;
+  right: 0;
+  height: 120px;
+}
+
+.title {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#title {
+  font-size: 400%;
+}
+
+/*Intro/About sa starting page*/
+.introduction-about {
+  top: -16%;
+  position: absolute;
+  left: -330px;
+  width: 120px;
+  height: 80px;
+}
+
+#about {
+  background-color: #fff569;
+  margin: 0;
+  position: absolute;
+  top: 110%;
+  height: 560px;
+  width: 1349px;
+}
+
+#abt-title {
+  font-size: 500%;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 10%;
+}
+
+/*Design na book sa about*/
+#book {
+  position: absolute;
+  right: -800px;
+}
+
+#about-content {
+  font-size: 100%;
+  margin-right: 50%;
+  margin-left: 10%;
+  position: absolute;
+  top: 40%;
+}
+
+/*Footer*/
+footer {
+  background-color: #3f7478;
+  margin: 0;
+  position: absolute;
+  top: 199%;
+  height: 300px;
+  width: 100%;
+}
+
+#logo-footer {
+  position: absolute;
+  right: 0px;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+#phone-icon {
+  margin-top: 2.5%;
+  margin-left: 5%;
+}
+
+#mail-icon {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+#loc-icon {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+#hr-footer {
+  color: #9ba192;
+  margin-top: 4%;
+}
+
+#vertical-line1 {
+  border-left: 2px solid #9ba192;
+  height: 200px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: -14%;
+}
+
+#saavedra-name {
+  margin-top: 2%;
+  margin-left: 9.8%;
+  font-size: medium;
+}
+
+#saavedra-num {
+  margin-top: -2.5%;
+  margin-left: 10%;
+  font-size: small;
+}
+
+#saavedra-email {
+  margin-top: -2%;
+  margin-left: 10%;
+  font-size: small;
+}
+
+#saavedra-loc {
+  margin-top: -2%;
+  margin-left: 10%;
+  font-size: small;
+}
+
+#footer-karl {
+  margin-top: -15.5%;
+  margin-left: 23%;
+}
+
+#karl-name {
+  margin-top: 2%;
+  margin-left: 9.8%;
+  font-size: medium;
+}
+
+#karl-num {
+  margin-top: -2.5%;
+  margin-left: 10%;
+  font-size: small;
+}
+
+#karl-email {
+  margin-top: -3%;
+  margin-left: 10%;
+  font-size: small;
+}
+
+#karl-loc {
+  margin-top: -2%;
+  margin-left: 10%;
+  font-size: small;
+}
+
+#footer-jan {
+  margin-top: -15.5%;
+  margin-left: 48%;
+}
+
+#jan-name {
+  margin-top: 3%;
+  margin-left: 9.8%;
+  font-size: medium;
+}
+
+#jan-num {
+  margin-top: -4%;
+  margin-left: 14%;
+  font-size: small;
+}
+
+#jan-email {
+  margin-top: -4%;
+  margin-left: 14%;
+  font-size: small;
+}
+
+#jan-loc {
+  margin-top: -3%;
+  margin-left: 14%;
+  font-size: small;
+}
+
+#end-footer {
+  margin-top: 1%;
+  font-size: x-small;
+}
+
+/*Login*/
+#logincontainer {
+  display: block;
+  text-align: center;
+}
+
+form {
+  margin-top: 8%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #8d88864f;
+  color: #9b4922;
+  height: auto;
+  width: 400px;
+  border: #9b4922 solid;
+}
+
+select {
+  width: 100%;
+}
+
+#login-signup {
+  margin-top: 5%;
+  font-size: 300%;
+}
+
+input,
+select {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  text-align-last: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #9b4922;
+  padding: 10px 24px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 2%;
+}
+
+.certificate{
+  cursor: pointer;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #fff569;
+  padding: 10px 24px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 2%;
+}
+
+.add-info {
+  font-size: small;
+  color: #5d5f5a;
+}
+
+/*Start Lesson/Add a Class Button*/
+#startLessonButton,
+#addAClassButton {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 45.5%;
+}
+
+/*Circular Progress Bar*/
+.progbar {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-top: 18%;
+  margin-left: 8%;
+}
+
+.chart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 160px;
+  height: 160px;
+}
+
+.stats {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 160px;
+  height: 160px;
+}
+
+/*Table sa grades/classes*/
+#graphics {
+  margin-top: -35%;
+  margin-left: 67.3%;
+  width: 100px;
+  height: 120px;
+}
+
+#tGraphics {
+  margin-top: -5%;
+  margin-left: 67.3%;
+  width: 100px;
+  height: 120px;
+}
+
+.boxed {
+  border: 5px solid #9b4922;
+  margin-top: 13%;
+  margin-left: 8%;
+  height: fit-content;
+  width: 200px;
+  text-align: center;
+}
+
+table.learnerStudentsTable {
+  width: 50%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  color: #000000;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+table.teacherTable {
+  width: 50%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  color: #000000;
+  margin-top: -5%;
+  margin-left: 30%;
+}
+
+table.learnerStudentsTable td,
+table.learnerStudentsTable th,
+table.teacherTable td,
+table.teacherTable th {
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  padding: 6px;
+}
+
+table.learnerStudentsTable thead,
+table.teacherTable thead {
+  background-color: #fff569;
+}
+
+.classNum {
+  color: #9b4922;
+  font-size: 30px;
+}
+
+/*Settings*/
+.buttons-container {
+  margin-top: 20%;
+  margin-left: 33%;
+  align-items: center;
+  align-content: center;
+  margin-bottom: -5%;
+}
+
+#changeUsernameContent,
+#changeNameContent,
+#changePasswordContent {
+  display: none;
+  text-align: center;
+  align-content: center;
+}
+
+/*Profile*/
+.classno {
+  background-color: #fff569;
+  height: 280px;
+  width: auto;
+  margin-top: 5%;
+}
+
+#editProfile {
+  margin-left: 57%;
+}
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  margin-top: -10%;
+  margin-left: 43%;
+}
+
+.outr {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.innr {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  display: flex;
+  background-image: url("images/defaultProfile.png");
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  background-position: center;
+  background-size: cover;
+}
+
+.iconProfile {
+  margin-right: 2%;
+  height: 20px;
+}
+
+.icons-names {
+  font-size: 30px;
+  align-content: center;
+  text-align: left;
+  margin-left: 5%;
+}
+
+/*Lesson Page*/
+.lessonButton {
+  cursor: pointer;
+  text-align: center;
+  color: #000;
+  background-color: #fff569;
+  padding: 10px 24px;
+  height: auto;
+  width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar {
+  margin-top: 1.2%;
+  width: 200px;
+  min-height: 100%;
+  height: 100%;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.allLessons {
+  align-content: center;
+  text-align: justify;
+  margin-top: 5%;
+  width: 800px;
+  height: auto;
+  margin-left: 20%;
+}
+
+#lesson1Content,
+#lesson2Content,
+#lesson3Content,
+#quiz1Content,
+#lesson4Content,
+#lesson5Content,
+#quiz2Content,
+#lesson6Content,
+#lesson7Content,
+#lesson8Content,
+#quiz3Content,
+#lesson9Content,
+#lesson10Content,
+#finalExamContent {
+  display: none;
+  text-align: justify;
+  align-content: center;
+}
+
+.lesson-content {
+  margin-top: 2%;
+  align-content: center;
+  text-align: center;
+}
+
+#nextButton {
+  text-align: right;
+  margin-right: 2%;
+}
+
+.tablelesson {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.tdborder {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tablequestionbaybay {
+  width: 150%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  color: #000000;
+  margin-top: 15%;
+  margin-left: -40%;
+  font-family: "noto";
+}
+table.tablequestionbaybay td,
+table.tablequestionbaybay th {
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  padding: 6px;
+  font-family: "noto";
+}
+.title-on-quizzes {
+  align-content: center;
+  text-align: center;
+}
+.baybayinquestion {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#startLesson {
+  height: 50px;
+}
+#viewCert{
+  text-align: center;
+  align-items: center;
+  margin-top: 10%;
+  align-self: center;
+  align-content: center;
+}
+
+/*For laptop and desktop wide screens media compatibility*/
+
+@media only screen and (max-width: 1920px) {
+  .introduction-about {
+    top: -3%;
+    width: auto;
+    height: 1000px;
+  }
+  .sidebar {
+    height: 90%;
+  }
+  #about {
+    width: 1920px;
+    height: 1080px;
+  }
+  #vertical-line1 {
+    margin-top: -9%;
+  }
+  #footer-karl {
+    margin-top: -11%;
+  }
+  #footer-jan {
+    margin-top: -10.5%;
+  }
+  #hr-footer {
+    margin-top: 3%;
+  }
+  #book {
+    margin-right: -120%;
+    height: 700px;
+  }
+  .classno {
+    height: 500px;
+    margin-top: 0;
+  }
+  .profilePic {
+    margin-top: -5%;
+  }
+  #changeName {
+    margin-left: 5%;
+  }
+  .lessonButton {
+    height: 72px;
+  }
+}
